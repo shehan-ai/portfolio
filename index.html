@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buwanaji - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Buwanaji</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" onclick="goToHome()">Home</a></li>
+                <li><a href="#assignments" class="nav-link" onclick="scrollToAssignments()">Assignments</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Buwanaji Dias Nagahawatta</h1>
+                <p class="tagline">Biotechnology & Business Professional</p>
+                <p class="bio">University of Diamond | SC1153: Introduction to Biotechnology</p>
+                <button class="cta-button" onclick="scrollToAssignments()">View My Work</button>
+            </div>
+            <div class="hero-image">
+                <img id="profileImage" src="profile-image.jpg" alt="Buwanaji" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments" class="assignments">
+        <div class="container">
+            <h2 class="section-title">My Assignments</h2>
+            <div class="assignments-grid" id="assignmentsGrid">
+                <!-- Assignments will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignment Detail View (Hidden by default) -->
+    <section id="assignmentDetail" class="assignment-detail-section hidden">
+        <div class="container">
+            <button class="back-button" onclick="goToHome()">← Back to Assignments</button>
+            <div class="assignment-detail" id="assignmentDetailContent">
+                <!-- Assignment details will be populated by JavaScript -->
+            </div>
+            <div id="pdfViewer" class="pdf-viewer-section hidden">
+                <h2>Assignment Guidelines & Resources</h2>
+                <iframe id="pdfFrame" src="" style="width: 100%; height: 600px; border: 1px solid #e5e7eb; border-radius: 10px;"></iframe>
+                <p style="text-align: center; margin-top: 1rem;">
+                    <a id="pdfDownloadLink" href="" download class="download-button">Download PDF</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Email: <a href="mailto:shehannilukshan@gmail.com">shehannilukshan@gmail.com</a></p>
+                <p>University: University of Diamond</p>
+                <p>Registration Number: HS26200917</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Buwanaji Dias Nagahawatta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
