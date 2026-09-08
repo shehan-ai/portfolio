@@ -1,4 +1,4 @@
-​Conclusions
+​Conclusion
 ​Completing the SC1153: Introduction to Biotechnology module and assembling this assessment portfolio has provided me with a strong academic foundation, practical technical insights, and a clear perspective on the multifaceted nature of modern biological sciences.
 
 ​Key Learnings & Academic Growth
